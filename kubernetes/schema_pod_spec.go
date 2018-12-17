@@ -13,9 +13,9 @@ func podSpecFields(isUpdatable bool) map[string]*schema.Schema {
 			Description:  "Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers. Value must be a positive integer.",
 		},
 		"automount_service_account_token": {
-			Type: schema.TypeBool,
-			Optional: true,
-			Default: false,
+			Type:        schema.TypeBool,
+			Optional:    true,
+			Default:     false,
 			Description: "AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.",
 		},
 		"container": {
